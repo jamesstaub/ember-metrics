@@ -22,6 +22,7 @@ export default BaseAdapter.extend({
     const config = get(this, 'config');
     const { token, api_host = "https://api.mixpanel.com"} = config;
     assert(`[ember-metrics] You must pass a valid \`token\` to the ${this.toString()} adapter`, token);
+    window.mixpanel = mixpanel;
     mixpanel.init(token, { "api_host": api_host, "secure_cookie": true });
   },
 
