@@ -5,7 +5,7 @@ import canUseDOM from '../utils/can-use-dom';
 import objectTransforms from '../utils/object-transforms';
 import removeFromDOM from '../utils/remove-from-dom';
 import BaseAdapter from './base';
-import mixpanel from 'mixpanel-browser';
+import mixpanel from 'mixpanel-browser/src/loader-module';
 
 const {
   without,
